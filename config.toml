@@ -1,0 +1,4 @@
+baseURL = 'https://blog.wonmocyberschool.com/'
+languageCode = 'en-us'
+title = 'Wonmo Cyber School Blog'
+theme = "wcs_hugo_theme"
