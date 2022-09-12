@@ -1,3 +1,18 @@
 body {
-  margin: 2rem;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  font-family: 'DungGeunMo';
+}
+.singlePostContainer{
+  width: 80%;
+}
+.singlePostContainer img {
+  width: 80%;
+}
+
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
