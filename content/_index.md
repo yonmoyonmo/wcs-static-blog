@@ -6,6 +6,4 @@ menu: "main"
 draft: "false"
 ---
 
-# content
-
-Hello Cyber World!
+this is homepage
