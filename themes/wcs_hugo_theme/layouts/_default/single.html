@@ -1,7 +1,20 @@
 {{ define "main" }}
-<div class="singleTitle" id="main">
-  <h1 id="title">{{ .Title }}</h1>
-  <h4 id="date">{{ .Date.Format "2006, 01, 01" }}</h4>
+
+<div class="singlePageContainer" id="main">
+  <div class="singlePageTopBottom">
+    <h3 style="border-bottom: 1px solid black" id="title">{{ .Title }}</h3>
+    <h4 id="date">{{ .Date.Format "2006, 01, 01" }}</h4>
+  </div>
   <div class="singlePostContainer">{{ .Content }}</div>
+  <div class="singlePageTopBottom">
+    {{ with .PrevInSection }}
+    <a class="previous" href="{{.Permalink}}">prev: {{.Title}}</a>
+    {{ end }} {{with .Parent}}
+    <a class="next" href="{{.Permalink}}">back to the list : {{.Title}}</a>
+    {{ end }} {{ with .NextInSection }}
+    <a class="next" href="{{.Permalink}}">next: {{.Title}}</a>
+    {{ end }}
+  </div>
 </div>
+
 {{ end }}

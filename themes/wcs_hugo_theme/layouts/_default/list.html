@@ -6,10 +6,14 @@
     </header>
     {{.Content}}
   </article>
-  {{ range .Pages }}
-  <div>
-    <a href="{{.Permalink}}">{{.Date.Format "2006, 01, 02"}} | {{.Title}}</a>
+  <div class="categories">
+    {{ range .Pages }}
+    <div>
+      <a href="{{.Permalink}}"
+        >🤜 {{.Title}} / {{.Date.Format "2006, 01, 02"}}</a
+      >
+    </div>
+    {{ end }}
   </div>
-  {{ end }}
 </main>
 {{ end }}

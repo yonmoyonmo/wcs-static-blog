@@ -1,11 +1,14 @@
 {{ define "main" }}
 <main aria-role="main">
-  <div class="homepage-content">{{.Content}}</div>
-  <div><h4>Categories</h4></div>
+  <div class="homepageContent">{{.Content}}</div>
+  <h4>👇 Post Categories 👇</h4>
+  <div class="categories">
   {{ range .Pages }}
   <div>
-    <a href="{{.Permalink}}">{{.Title}}</a>
+    <a href="{{.Permalink}}"> 👍 {{.Title}}</a>
   </div>
   {{ end }}
+  </div>
+</div>
 </main>
 {{ end }}

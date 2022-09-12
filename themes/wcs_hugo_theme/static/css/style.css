@@ -1,18 +1,96 @@
-body {
-  background-image: url("/images/background.jpg");
-  background-size: cover;
-  font-family: 'DungGeunMo';
-}
-.singlePostContainer{
-  width: 80%;
-}
-.singlePostContainer img {
-  width: 80%;
-}
-
 @font-face {
   font-family: 'DungGeunMo';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+/*--------------------------------*/
+body {
+  font-family: 'DungGeunMo';
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: rgba(64, 19, 214, 0.873);
+}
+
+/* visited link */
+a:visited {
+  color: rgba(64, 19, 214, 0.873);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(70, 218, 161);
+}
+
+/* selected link */
+a:active {
+  color: rgba(255, 230, 0, 0.844);
+}
+/*--------------------------------*/
+.contentWrapper{
+  text-align: center;
+}
+.singlePageContainer{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 50%;
+}
+.singlePostContainer{
+  width: 90%;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.singlePostContainer img {
+  text-align: center;
+  width: 100%;
+}
+.singlePageTopBottom{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+/*--------------------------------*/
+.categories{
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.headerTitle {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.8rem;
+}
+.homepageContent {
+  text-align: center;
+}
+/*--------------------------------*/
+
+@media (max-width: 400px) {
+  .singlePageContainer{
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.7rem;
+    width: 95%;
+  }
+  .singlePostContainer{
+    margin-left: 0rem;
+  }
+  .categories{
+    width: 90%;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid black;
+    padding: 1rem;
+  }
 }
