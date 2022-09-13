@@ -10,7 +10,7 @@
     {{ range .Pages }}
     <div>
       <a href="{{.Permalink}}"
-        >🤜 {{.Title}} / {{.Date.Format "2006, 01, 02"}}</a
+        >🤜 {{.Date.Format "2006, 01, 02"}} [ {{.Title}} ]</a
       >
     </div>
     {{ end }}

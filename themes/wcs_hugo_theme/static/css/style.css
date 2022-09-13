@@ -8,18 +8,20 @@
 body {
   font-family: 'DungGeunMo';
   padding: 1rem;
+  line-height: 1.6;
+  background-color: rgb(234, 234, 234);
 }
 a {
   text-decoration: none;
 }
 /* unvisited link */
 a:link {
-  color: rgba(64, 19, 214, 0.873);
+  color: rgb(100, 63, 222);
 }
 
 /* visited link */
 a:visited {
-  color: rgba(64, 19, 214, 0.873);
+  color: rgb(79, 36, 222);
 }
 
 /* mouse over link */
@@ -29,7 +31,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: rgba(255, 230, 0, 0.844);
+  color: rgb(174, 174, 174)
 }
 /*--------------------------------*/
 .contentWrapper{
@@ -37,9 +39,11 @@ a:active {
 }
 .singlePageContainer{
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
   width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .singlePostContainer{
   width: 90%;
@@ -63,23 +67,27 @@ a:active {
   width: 50%;
   display: inline-block;
   text-align: left;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .headerTitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   padding: 0.8rem;
 }
 .homepageContent {
   text-align: center;
 }
+
 /*--------------------------------*/
 
 @media (max-width: 1000px) {
   .singlePageContainer{
     display: inline-block;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     padding: 0.7rem;
     width: 95%;
   }
@@ -90,7 +98,8 @@ a:active {
     width: 90%;
     display: inline-block;
     text-align: left;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
   }
 }
