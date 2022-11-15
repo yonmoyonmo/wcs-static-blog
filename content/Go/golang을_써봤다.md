@@ -4,12 +4,13 @@ date: 2022-11-15T19:58:50+09:00
 draft: false
 ---
 
-![gopher](/images/Go/gologo.png)  
+![gopher](/images/Go/gologo.png)
+
 나의 쪼꼬만 앱 서비스 스몰토크헬퍼의 서버가 죽었다. 다시 살리려다가 go를 써볼 겸 다시 만들기로 했다. 만들면서 알게된 부분들을 기록해놓고 까먹었을 때 다시 보고 기억하기 위해 글을 쓰는 중이다.
 
 [완성된 서버 소스코드](https://github.com/yonmoyonmo/new_small_talk_helper_server/tree/main/newServer)
 
-새로운 언어를 익힐때[공식문서](https://go.dev/doc/tutorial/getting-started)를 보고 하라는대로 해보는게 최고다. 나도 그렇게 한 번 따라해보고 Go의 컨셉을 어느정도 익혔다. 그 후 [freeCodeCamp go tutorial](https://www.youtube.com/watch?v=YS4e4q9oBaU)을 보고 조금 더 배웠다. 언어 그 자체에 대한 정보는 언제든지 다른 곳에서 찾아 볼 수 있으므로 적어놓지 않아도 될 것 같다.
+새로운 언어를 익힐때 [공식문서](https://go.dev/doc/tutorial/getting-started)를 보고 하라는대로 해보는게 최고다. 나도 그렇게 한 번 따라해보고 Go의 컨셉을 어느정도 익혔다. 그 후 [freeCodeCamp go tutorial](https://www.youtube.com/watch?v=YS4e4q9oBaU)을 보고 조금 더 배웠다. 언어 그 자체에 대한 정보는 언제든지 다른 곳에서 찾아 볼 수 있으므로 적어놓지 않아도 될 것 같다.
 
 이 글에는 HTTP로 API를 제공하는 서버를 만들기 위해 필요했던 golang 패키지들을 까먹지 않게 적어놓아야겠다.
 
