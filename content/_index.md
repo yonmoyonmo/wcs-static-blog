@@ -6,4 +6,4 @@ menu: "main"
 draft: "false"
 ---
 
--- 공사 중 --
+A journal of the cyber study written by wonmo.
