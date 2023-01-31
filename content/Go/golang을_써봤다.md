@@ -24,7 +24,7 @@ Go는 기본 http 라이브러리로도 충분하다고 하길래 다른 프레�
 
 아래 코드처럼 route를 등록하여 ServeMux를 세팅하여 사용하니 좋았다.
 
-```
+```go
 func InitializeRouter() *http.ServeMux {
 	log.Println("initializing router...")
 	mux := http.NewServeMux()

@@ -94,6 +94,9 @@ a:active {
   .singlePostContainer{
     margin-left: 0rem;
   }
+  .singlePostContainer pre{
+    overflow: scroll;
+  }
   .categories{
     width: 90%;
     display: inline-block;
