@@ -20,7 +20,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            whoami
             cd ./wcs-static-blog
+            git pull
             hugo
-            nginx -s reload
