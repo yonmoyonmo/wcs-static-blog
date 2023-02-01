@@ -1,0 +1,24 @@
+name: on push deployment
+
+on:
+  push:
+    branches:
+      - "main"
+
+  workflow_dispatch:
+
+jobs:
+  auto_hugo_in_my_server:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ssh my server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            whoami
+            ls
