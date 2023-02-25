@@ -2,3 +2,10 @@ baseURL = 'https://blog.wonmocyberschool.com/'
 languageCode = 'en-us'
 title = 'Wonmo Cyber School Blog'
 theme = "wcs_hugo_theme"
+
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
